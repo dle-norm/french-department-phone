@@ -1,0 +1,13 @@
+<section>
+  <h2>Crypte ton numéro de téléphone en département français</h2>
+  <input
+    type="text"
+    [(ngModel)]="userInput"
+    required
+    minlength="10"
+    maxlength="10"
+    size="10"
+  />
+  <button type="button" (click)="compute()">Génèrer</button>
+  <p>{{ crypt }}</p>
+</section>
